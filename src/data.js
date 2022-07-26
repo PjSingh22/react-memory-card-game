@@ -1,44 +1,54 @@
 import React from 'react';
+import aussie from './images/aussie.jpg';
+import chowChow from './images/chow-chow.jpg';
+import corgi from './images/corgi.jpg';
+import dachshund from './images/dachshund.jpg';
+import german from './images/german.jpg';
+import goldy from './images/goldy.jpg';
+import pomeranian from './images/pomeranian.jpg';
+import poodle from './images/poodle.jpg';
+import shiba from './images/shiba.jpg';
+import yorki from './images/yorki.jpg';
 
 export const data = [
   {
     name: 'Australian Shepherd',
-    url: './images/aussy.jpg'
+    url: aussie,
   },
   {
     name: 'Chow Chow',
-    url: './images/chow-chow.jpg'
+    url: chowChow,
   },
   {
     name: 'Corgi',
-    url: './images/corgi.jpg'
+    url: corgi,
   },
   {
     name: 'Dachshund',
-    url: './images/dachshund.jpg'
+    url: dachshund
   },
   {
     name: 'German Shepherd',
-    url: './images/german.jpg'
+    url: german
   },
   {
     name: 'Golden Retriever',
-    url: './images/goldy.jpg'
+    url: goldy
   },
   {
     name: 'Pomeranian',
-    url: './images/pomeranian.jpg'
+    url: pomeranian
   },
   {
     name: 'Poodle',
-    url: './images/poodle.jpg'
+    url: poodle
   },
   {
     name: 'Shiba Inu',
-    url: './images/shiba.jpg'
+    url: shiba
   },
   {
     name: 'Yorkshire Terrier',
-    url: './images/yorki.jpg'
+    url: yorki
   }
 ];

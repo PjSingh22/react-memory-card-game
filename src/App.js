@@ -11,9 +11,10 @@ function App() {
     <div className="App">
       <header className="app-header">Puppy Memory Game</header>
       <div className="card-container">
-
+        {data.map(dog => (
+          <Card key={dog.name} name={dog.name} image={dog.url} />
+        ))}
       </div>
-      <Card image={goldy} name="golden retriever" />
     </div>
   );
 }

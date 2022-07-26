@@ -13,8 +13,8 @@ export default function Card({ image, name }) {
 
   return (
     <div className="card">
-      <div className="card-image">
-        <img src={cardImg} alt={cardName} />
+      <div className="card-image" style={{ backgroundImage: `url(${cardImg})` }}>
+        {/* <img src={cardImg} alt={cardName} /> */}
       </div>
       <div className="card-name">
         {cardName}
