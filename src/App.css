@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  height: 15vh;
+  background-color: #fddf97;
+  font-size: 65px;
+  font-family: 'Edu TAS Beginner', cursive;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
