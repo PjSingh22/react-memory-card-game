@@ -1,35 +1,27 @@
 import React from 'react';
 
-export default function Card({ image, name, setCurrentScore, setTopScore, currentScore, topScore }) {
-  const [checked, setChecked] = React.useState(false);
+export default function Card({ image, name, setCurrentScore, setTopScore, setGameOver, currentScore, topScore, checked, resetGame, data, shuffleCards }) {
+  const [checkCard, setCheckCard] = React.useState(checked);
   const [cardImg, setCardImg] = React.useState(image);
   const [cardName, setCardName] = React.useState(name);
 
   const increaseScore = () => {
     setCurrentScore(currentScore => currentScore + 1);
-    if (checked) {
-      setChecked(false);
-      return gameOver();
+    setCheckCard(true);
+    shuffleCards();
+    if(checkCard) {
+      setCurrentScore(currentScore => currentScore - 1);
+      gameOver();
     }
-    setChecked(true);
   }
-
+  
   const gameOver = () => {
-    setTopScore(currentScore);
-    setCurrentScore(0);
+    setGameOver(true);
   }
-
-  React.useEffect(() => {
-    setCardImg(image);
-    setCardName(name);
-  }
-  , [image, name]);
 
   return (
     <div className="card" onClick={increaseScore}>
-      <div className="card-image" style={{ backgroundImage: `url(${cardImg})` }}>
-        {/* <img src={cardImg} alt={cardName} /> */}
-      </div>
+      <div className="card-image" style={{ backgroundImage: `url(${cardImg})` }} />
       <div className="card-name">
         {cardName}
       </div>

@@ -105,3 +105,21 @@ img {
   font-family: 'Edu TAS Beginner', cursive;
   font-size: 1.5rem;
 }
+
+.game-over > h1 {
+  font-size: 3rem;
+  font-family: 'Edu TAS Beginner', cursive;
+  color: white;
+  text-align: center;
+}
+
+.game-over > button {
+  background-color: #fddf97;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}

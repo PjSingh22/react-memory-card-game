@@ -1,4 +1,3 @@
-import React from 'react';
 import aussie from './images/aussie.jpg';
 import chowChow from './images/chow-chow.jpg';
 import corgi from './images/corgi.jpg';
@@ -14,41 +13,51 @@ export const data = [
   {
     name: 'Australian Shepherd',
     url: aussie,
+    checked: false
   },
   {
     name: 'Chow Chow',
     url: chowChow,
+    checked: false
   },
   {
     name: 'Corgi',
     url: corgi,
+    checked: false,
   },
   {
     name: 'Dachshund',
-    url: dachshund
+    url: dachshund,
+    checked: false,
   },
   {
     name: 'German Shepherd',
-    url: german
+    url: german,
+    checked: false,
   },
   {
     name: 'Golden Retriever',
-    url: goldy
+    url: goldy,
+    checked: false,
   },
   {
     name: 'Pomeranian',
-    url: pomeranian
+    url: pomeranian,
+    checked: false,
   },
   {
     name: 'Poodle',
-    url: poodle
+    url: poodle,
+    checked: false,
   },
   {
     name: 'Shiba Inu',
-    url: shiba
+    url: shiba,
+    checked: false,
   },
   {
     name: 'Yorkshire Terrier',
-    url: yorki
+    url: yorki,
+    checked: false,
   }
 ];
